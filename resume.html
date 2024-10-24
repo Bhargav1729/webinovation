@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-top">
+        <h3 id="current-page">Home</h3>
+    </div>
+    <nav>
+        <a href="#home" id="home-link" class="active" onclick="navigate('home')">Home</a>
+        <a href="#about" id="about-link" onclick="navigate('about')">About Me</a>
+        <a href="#education" id="education-link" onclick="navigate('education')">Education</a>
+        <a href="#experience" id="experience-link" onclick="navigate('experience')">Experience</a>
+        <a href="#projects" id="projects-link" onclick="navigate('projects')">Projects</a>
+        <a href="#achievements" id="achievements-link" onclick="navigate('achievements')">Achievements</a>
+        <a href="#contact" id="contact-link" onclick="navigate('contact')">Contact</a>
+    </nav>
+</div>
+
+<div class="main-content">
+    <div id="home-section">
+        <h1>WELCOME TO MY RESUME</h1>
+        <h5>Hello, I am <u>Bhargav Kumar</u>, a passionate student from the field of <u>B.Tech in CSE</u> specialization in <u>Artificial Intellegence and Machine Learning</u></h5>
+        <h5>This Website is a showcase of my educational background, projects, achievements</h5>
+    </div>
+    <div id="about-section" class="hidden">
+        <h2>About Me</h2>
+        <p>This section is about me.</p>
+    </div>
+    <div id="education-section" class="hidden">
+        <h2>Education</h2>
+        <p>Details about my education go here.</p>
+    </div>
+    <div id="experience-section" class="hidden">
+        <h2>Experience</h2>
+        <p>Experience details go here.</p>
+    </div>
+    <div id="projects-section" class="hidden">
+        <h2>Projects</h2>
+        <p>Information about my projects goes here.</p>
+    </div>
+    <div id="contact-section" class="hidden">
+        <h2>Contact</h2>
+        <p>Here's how you can contact me.</p>
+    </div>
+    <div id="achievements-section" class="hidden">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Achievement 1: Description of the achievement.</li>
+            <li>Achievement 2: Description of the achievement.</li>
+            <li>Achievement 3: Description of the achievement.</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

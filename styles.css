@@ -1,0 +1,127 @@
+:root {
+   --light-bg: #ffffff;
+   --light-color: #000987;
+   --sidebar-bg: #333;
+   --sidebar-top-bg: #222;
+   --sidebar-hover-bg: #444;
+   --active-bg: grey;
+}
+
+body {
+   display: flex;
+   margin: 0;
+   font-family: Arial, sans-serif;
+   height: 100vh;
+   background-color: var(--light-bg);
+   color: var(--light-color);
+   transition: background-color 0.5s, color 0.5s;
+}
+
+.sidebar {
+   width: 16.66%;
+   background-color: var(--sidebar-bg);
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   transition: background-color 0.5s;
+}
+
+.sidebar-top {
+   padding: 10px;
+   background-color: var(--sidebar-top-bg);
+   transition: background-color 0.5s;
+}
+
+.sidebar nav {
+   padding: 10px;
+}
+
+.sidebar nav a {
+   display: block;
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 5px;
+   transition: background-color 0.5s;
+}
+
+.sidebar nav a:hover {
+   background-color: var(--sidebar-hover-bg);
+}
+
+.sidebar nav a.active {
+   background-color: var(--active-bg);
+}
+
+/* Main Content */
+.main-content {
+   width: 83.33%;
+   padding: 20px;
+   overflow-y: auto;
+   transition: background-color 0.5s, color 0.5s;
+}
+
+.hidden {
+   display: none;
+}
+
+h2 {
+   margin-top: 0;
+}
+
+/* Achievements Section */
+#achievements-section {
+   padding: 20px;
+}
+
+#achievements-section ul {
+   list-style-type: disc;
+   padding-left: 20px;
+}
+
+#achievements-section li {
+   margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .sidebar {
+       width: 100%;
+       height: auto;
+   }
+   .main-content {
+       width: 100%;
+   }
+}
+
+/* Fade-in Transition for Sections */
+.main-content div {
+   transition: opacity 0.5s ease;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.main-content div:not(.hidden) {
+   visibility: visible;
+   opacity: 1;
+}
+
+#home-section {
+   text-align: center; /* Center the text */
+   margin: 20px; /* Add some margin */
+   padding: 20px; /* Add padding */
+   background-color: var(--light-bg); /* Background color for visibility */
+   border-radius: 10px; /* Rounded corners */
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+   font-size: 2.5em; /* Larger font size for the main heading */
+   color: var(--light-color); /* Use your theme color */
+}
+
+h5 {
+   font-size: 1.5em; /* Slightly larger for emphasis */
+   color: var(--light-color); /* Link color for contrast */
+}
